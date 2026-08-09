@@ -1,39 +1,25 @@
-# Wisp
+# Vistula
 
-This project is a fork of Netsurf with various fixes and improvements, a new JS engine, and a revamped build system.
+**Lekka, nowoczesna przeglądarka internetowa, zbudowana z polskim sercem.**
 
-## Why?
-Wisp has a different development vision from Netsurf. While Netsurf is a browser for the "old web", Wisp aspires to be a browser for the "modern web".
-We appreciate the philosophy of Netsurf, and intend to keep the spirit of the project alive: a lean, small, and portable browser.
+Vistula powstała jako samodzielny fork projektu NetSurf. Celem jest stworzenie szybkiej, lekkiej i bezpiecznej przeglądarki, która działa na Windows, Linux i macOS, obsługuje współczesny JavaScript i daje użytkownikom kontrolę nad ich danymi – bez inwigilacji, bez telemetrii.
 
-![Wisp](img/wisp_home.png?raw=true "Wisp Homepage")
-![GNU.org](img/wisp_gnu.png?raw=true "GNU.org")
+## Dlaczego Vistula?
+- **Szybka i lekka** – zbudowana na solidnym silniku w języku C.
+- **Prywatna z założenia** – nie jesteś produktem.
+- **Otwarta** – kod źródłowy dostępny na licencji GPLv2.
+- **Polski akcent** – nazwa pochodzi od Wisły (Vistula).
 
-## Development
-Current development is focused on adding compatibility with modern websites, integrating the QuickJS-ng JS engine and porting to different platforms, most notably modern Windows using Direct2D, OS X, Haiku and Remarkable.
+## Aktualny stan
+Projekt znajduje się we wczesnej fazie rozwoju.
 
-## Biggest differences from Netsurf
-* Removed compatibility for super old and/or obscure libraries/software/operating systems
-* Dedicated LibreSSL support
-* Numerous privacy improvements
-* Rewritten build system
-* Simplified frontend development
+## Cele na najbliższą przyszłość
+- [ ] Modernizacja stosu sieciowego (HTTP/2)
+- [ ] Obsługa JavaScript (Duktape)
+- [ ] Nowoczesny interfejs użytkownika (GTK4)
+- [ ] Odtwarzanie wideo
+- [ ] Wsparcie dla Windows, Linux i macOS
 
-## Known Issues
-All other frontends, except for the Qt one on Linux and the GDI one on Windows, are not tested and probably don't work.
-The JS engine using QuickJS is just a stub.
+---
 
-## Building and installation
-Wisp can be built:
-* On Windows (for the Windows frontend) using MSYS2 and the MinGW-w64 toolchain.
-* On Linux (for the Qt frontend) using CMake and ninja or make.
-
-
-Wisp intends to be portable, keeping a lean C99 codebase and minimal dependencies.
-
-At build-time, Wisp requires the following programs:
-* python3
-* cmake
-* any CMake-compatible build utility (typically make or ninja)
-* gperf
-* pkg-config or pkgconf
+**Stworzone przez Pjotra Em**
